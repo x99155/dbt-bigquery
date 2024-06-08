@@ -5,6 +5,7 @@ Welcome to your new dbt project!
 Try running the following commands:
 - dbt run
 - dbt test
+- dbt docs generate && dbt docs serve to run server and go to localhost:8080
 
 
 ### Resources:
