@@ -9,7 +9,7 @@ Try running the following commands:
 
 
 ### Build model on top of model
-- [Captures](captures/dbt-dag.png)
+![the dag we build on our dbt project](captures/dbt-dag.png)
 
 
 ### Resources:
