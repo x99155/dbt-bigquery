@@ -1,8 +1,8 @@
-
+# fichier de tests
 version: 2
 
 models:
-  - name: customers
+  - name: dim_customers
     description: "Test for customers model"
     columns:
       - name: customer_id
@@ -18,14 +18,14 @@ models:
         data_tests:
           - not_null
           
-  - name: stg_customers
+  - name: stg_jaffle_shop_customers
     columns:
       - name: customer_id
         data_tests:
           - unique
           - not_null
 
-  - name: stg_orders
+  - name: stg_jaffle_shop_orders
     columns:
       - name: order_id
         data_tests:
@@ -39,5 +39,5 @@ models:
         data_tests:
           - not_null
           - relationships:
-              to: ref('stg_customers')
+              to: ref('stg_jaffle_shop_customers')
               field: customer_id
